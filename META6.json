@@ -1,14 +1,20 @@
 {
-    "perl" : "6.c",
-    "name" : "Supply::Timeout",
-    "version" : "0.0.1",
-    "description" : "Supply wrapper with timeout functionality",
-    "authors" : [ "cono" ],
-    "license" : "Artistic-2.0",
-    "provides" : {
-	"Supply::Timeout" : "lib/Supply/Timeout.pm6"
-    },
-    "depends" : [ ],
-    "resources" : [ ],
-    "source-url" : "git@github.com:cono/p6-supply-timeout.git"
+  "auth" : "github:cono",
+  "authors" : [
+    "cono"
+  ],
+  "build-depends" : [ ],
+  "depends" : [ ],
+  "description" : "Supply wrapper which can terminate by timeout.",
+  "license" : "Artistic-2.0",
+  "name" : "Supply::Timeout",
+  "perl" : "6.c",
+  "provides" : {
+    "Supply::Timeout" : "lib/Supply/Timeout.pm6"
+  },
+  "resources" : [ ],
+  "source-url" : "git@github.com:cono/p6-supply-timeout.git",
+  "tags" : [ ],
+  "test-depends" : [ ],
+  "version" : "0.0.2"
 }

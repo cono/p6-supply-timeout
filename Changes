@@ -1,0 +1,9 @@
+Revision history for Supply-Timeout
+
+{{$NEXT}}
+
+0.0.2  2019-08-09T10:59:38+03:00
+    - Add done when last event appears, to clear up timeout
+
+0.0.1:
+    - Initial version

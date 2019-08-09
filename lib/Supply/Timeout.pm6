@@ -4,7 +4,7 @@ class X::Supply::Timeout is Exception {
     method message { "Timed out" }
 }
 
-class Supply::Timeout:ver<0.0.1>:auth<cono "q@cono.org.ua"> {
+class Supply::Timeout:ver<0.0.2>:auth<github:cono> {
     has Supply $.supply;
     has $.timeout;
 
@@ -17,7 +17,8 @@ class Supply::Timeout:ver<0.0.1>:auth<cono "q@cono.org.ua"> {
             my $last = now;
             whenever $!supply {
                 $last = now;
-                emit $_
+                emit $_;
+		LAST done;
             }
             whenever Supply.interval(0.1) {
                 if now - $last > $!timeout {
